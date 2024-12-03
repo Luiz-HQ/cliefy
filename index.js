@@ -1,8 +1,7 @@
 import express from "express";
+import api from "./routes/api.js";
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Hello world");
-});
+app.use("/", api);
 
-app.listen(3000, () => console.log("Server running at port 3000"));
+app.listen(3000, () => console.log("⚡Server running at port 3000"));

@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS SCHEDULING (
     id INTEGER,
     name TEXT NOT NULL,
     phone TEXT NOT NULL,
-    data TEXT NOT NULL,
+    date TEXT NOT NULL,
     service_id INTEGER NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (service_id) REFERENCES SERVICES(id)
